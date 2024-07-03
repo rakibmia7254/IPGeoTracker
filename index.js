@@ -3,11 +3,7 @@ import { route, me } from "./routes";
 
 const app = new Elysia();
 
-app.get("/", () => {
-  return {
-    hello: "world",
-  };
-});
+app.get("/", me);
 
 app.get("/:ip", route);
 app.get("/me", me);
