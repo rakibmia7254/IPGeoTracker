@@ -8,11 +8,12 @@ export async function route({ params }) {
 }
 
 export async function me({ headers }) {
-  return ipTracker(
-    headers["x-forwarded-for"] ||
-      headers["x-real-ip"] ||
-      headers["x-client-ip"] ||
-      headers["x-forwarded-for"] ||
-      "127.0.0.1"
-  );
+  const ip = headers["x-forwarded-for"] ||
+  headers["x-real-ip"] ||
+  headers["x-client-ip"] ||
+  headers["x-forwarded-for"] ||
+  "127.0.0.1"
+
+  const result = ipTracker(ip);
+  return {ip, info: result }
 }
