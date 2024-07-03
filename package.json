@@ -1,0 +1,11 @@
+{
+  "name": "iptracker",
+  "module": "index.ts",
+  "type": "module",
+  "devDependencies": {},
+  "peerDependencies": {},
+  "dependencies": {
+    "elysia": "^1.0.27",
+    "ip": "^2.0.1"
+  }
+}
