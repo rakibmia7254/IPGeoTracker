@@ -31,7 +31,7 @@ Usage
 2.  **Access the API:**
     
     *   The server runs on `http://localhost:3000`.
-    *   Use the `/iptracker` endpoint to get geolocation data.
+    *   Use the `/` endpoint to get geolocation data.
 
 ### Example Request:
 
